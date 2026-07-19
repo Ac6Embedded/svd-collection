@@ -1,0 +1,55 @@
+[submodule "st"]
+	path = st
+	url = https://github.com/modm-io/cmsis-svd-stm32
+	branch = main
+	shallow = true
+[submodule "nxp"]
+	path = nxp
+	url = https://github.com/nxp-mcuxpresso/mcux-soc-svd
+	branch = release/25.06.00
+	shallow = true
+[submodule "nordic"]
+	path = nordic
+	url = https://github.com/Ac6Embedded/svd-nordic
+	branch = main
+	shallow = true
+[submodule "raspberrypi"]
+	path = raspberrypi
+	url = https://github.com/Ac6Embedded/svd-raspberrypi
+	branch = main
+	shallow = true
+[submodule "espressif"]
+	path = espressif
+	url = https://github.com/Ac6Embedded/svd-espressif
+	branch = main
+	shallow = true
+[submodule "analog"]
+	path = analog
+	url = https://github.com/Ac6Embedded/svd-analog
+	branch = main
+	shallow = true
+[submodule "ti"]
+	path = ti
+	url = https://github.com/Ac6Embedded/svd-ti
+	branch = main
+	shallow = true
+[submodule "microchip"]
+	path = microchip
+	url = https://github.com/Ac6Embedded/svd-microchip
+	branch = main
+	shallow = true
+[submodule "infineon"]
+	path = infineon
+	url = https://github.com/Ac6Embedded/svd-infineon
+	branch = main
+	shallow = true
+[submodule "silabs"]
+	path = silabs
+	url = https://github.com/Ac6Embedded/svd-silabs
+	branch = main
+	shallow = true
+[submodule "renesas"]
+	path = renesas
+	url = https://github.com/Ac6Embedded/svd-renesas
+	branch = main
+	shallow = true

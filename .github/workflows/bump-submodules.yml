@@ -1,0 +1,26 @@
+name: bump-submodules
+on:
+  schedule:
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump submodule pointers
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python3 scripts/bump.py
+      - name: Commit and push if changed
+        run: |
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Bump submodules ($(date -u +%F))"
+            git push
+          else
+            echo "Up to date"
+          fi
